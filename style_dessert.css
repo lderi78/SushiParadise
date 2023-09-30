@@ -1,0 +1,32 @@
+#table-dessert td {
+    padding: 1rem;
+    min-width: 6rem;
+    text-align: center;
+}
+
+#table-dessert td img {
+    display: block;
+    margin: 0;
+    border-radius: .5rem;
+    max-height: 150px;
+    max-width: 80%;
+}
+
+@media screen and (min-width: 425px) {
+    #table-dessert td img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+#table-dessert td.details {
+    text-align: justify;
+}
+
+#table-dessert td.details h2 {
+    margin: 0 0 1rem 0;
+}
+
+#table-dessert td.price {
+    font-size: 1.2rem;
+}
