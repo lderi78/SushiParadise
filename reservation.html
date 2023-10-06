@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="css/stylereservation.css" rel="stylesheet" type="text/css" />
+   <title>Sushi Paradise - Reservation</title>
+ </head>
+ <body>
+
+  <header>
+      <nav>
+        <h1>SUSHI PARADISE   寿司パラダイス</h1>
+            <ul>
+              <li><a href="./index.html">Home</a></li></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./boisson.html">Boisson</a></li>
+              <li><a href="./dessert.html">Dessert</a></li>
+              <li><a href="./reservation.html">Reservation</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+
+  <main>
+  <section class="section1" id="id1">
+    <h1>RESERVEZ VOS PLACES AU PLUS VITE....</h1>
+  </section>
+
+  <section class="section2" id="id2" >
+    <div>
+      <form method="post" action="result.php">
+
+        <!--  nom, nombre de personne, date, heure, telephone -->
+
+        <div>
+          <!-- <label for="nom">Votre Nom : </label> -->
+          <input type="text" id="customerName" name="customerName" placeholder="Votre nom" maxlength="32" required = "true">
+        </div>
+
+        <div>
+        <input type="text" id="customerSeats" name="customerSeats" placeholder="Nombre de personne(s)" min="0" max="10" required = "true">
+        </div>
+
+        <div>
+          <input type="text" id="customerPhone" name="customerPhone" placeholder="N° de téléphone" maxlength="10" required = "true">
+        </div>
+
+        <div class="dateform">
+
+          <input type="date" name="customerDate"  value="<?php echo date('dd-mm-yyyy'); ?>" required = "true"/>
+          <br/>
+        </div>
+        
+      <div>
+        <input type="submit" value="Envoyer votre message" class="sendbutton">
+      </div>
+      </form>
+
+    </div>
+  </section>
+
+  <section class="section3" id="id3">
+    
+    <div><p>Dans ces anciennes cultures, l'art d'accomoer les plats acquiert une dimiension philosophique, en unissant harmonieusement l'homme et la nature..</p></div>
+    <br/></section>
+
+    <footer><p> ALL RIGHT RESERVED</p></footer>
+
+  <script src="script2.js"></script>
+  </main>
+ </body>
+</html>
+

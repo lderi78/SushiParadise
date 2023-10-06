@@ -1,0 +1,109 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+
+:root {
+    --background-colour: #101020;
+    --navbar-color: #000000;
+    --font-color : #ebdecd;
+    --font-color2 : #C49B63;
+}
+
+body {
+    background-color: var(--background-colour);
+    background-image: url('../assets/welcomemod.png');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir l'intégralité du body */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image en arrière-plan pour qu'elle reste en place lors du défilement de la page */
+    /* Police de caratere */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 14px; 
+    margin:0px; 
+}
+
+a {
+    text-decoration:none; /* pas de underline, etc */
+    text-transform: uppercase;
+    color: var(--font-color);
+    }
+
+h1 {
+    /* Ajoute une petite marge au dessus du H1*/
+    margin-top:4px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    text-align:center;
+    text-transform: uppercase;
+    font-size: calc(0.5rem + 1.0vw);
+
+}
+
+nav {
+    
+    /* Couleur de fond le la barre de navigation */
+    /* background-color: var(--navbar-color);  */
+    /* Ne pas l'utiliser permet d'avoir la transpare */
+    padding:8px;     /* Padding de la NAV */
+    /* Couleur du menu (de la font)*/
+    color: var(--font-color2);
+    /* Ajoute une ombre sous la barre de navigation */
+    box-shadow: 0 1px 2px 0 rgba(230, 230, 230, 0.5);
+}
+
+nav ul {
+    margin-top:16px; /* Ajoute un espace entre les UL et le Top Text */
+    /* Affichage en FLEX */
+    display:flex;
+    justify-content: space-around;
+
+    /* Retire les Bullets et affiche un espace de 4 rem */
+    list-style-type: none ;
+    gap : 0.5rem; 
+}
+
+.section1 h1 {
+    margin-top: 32px; /* Ajoute 16 pix sous la derniere section */
+     height: 8px;
+    text-align:center;
+    color: var(--font-color);
+}
+
+.section2 div{
+    /* Ajoute de la marge à la section afin de la 
+    détacher de la navbar. */
+    Margin: 2rem;
+    display:flex;
+    justify-content: center;
+}
+
+.section2 img {
+    max-width: 100%; /* l'image occupe la place de son conteneur */
+    height: auto; /* l'image s'ajuste automatiquement en hauteur */
+}
+
+.section3 div {
+    width: 550px;
+}
+.section3 {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    height: 100px; /* Ajuste la hauteur selon vos besoins */
+    text-align: center; /* Centre le texte horizontalement */
+    color: var(--font-color);
+}
+  
+  .section3 div {
+     margin: 1rem;
+  }
+
+footer {
+
+    margin-top: 16px; /* Ajoute 16 pix sous la derniere section */
+    color: var(--font-color);
+    text-align: left; /* Centre le texte horizontalement */   
+}
